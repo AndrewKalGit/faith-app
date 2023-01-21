@@ -12,14 +12,12 @@ const Sermons = ({ embedId }) => (
   <div>
    <object 
     className="video-responsive"
-    width="1500"
+    width="1200"
     height="650"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
+    autoplay loop playsinline 
+    muted 
     title="Embedded youtube">
     <param name="movie" value={`http://www.youtube.com/v/${embedId}`}></param>
-    <embed src={`http://www.youtube.com/v/${embedId}`} type="application/x-shockwave-flash"></embed>
 </object>
   </div>
 </>
