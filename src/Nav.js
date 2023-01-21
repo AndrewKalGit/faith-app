@@ -18,9 +18,8 @@ const close = () => {
 <header class="shadow-sm">
   <div class="max-w-screen-4xl mx-auto">
     <div class="flex justify-center items-center lg:justify-between space-x-4 lg:space-x-10">
-      <Link to="/" class="flex lg:w-0 lg:flex-1">
+        
         <img class="w-28 bg-white rounded-lg" src={Logo} alt='Logo'/>
-      </Link>
 
       <nav class="hidden space-x-8 text-sm font-medium lg:flex">
         <ul class='text-black lg:flex lg:gap-12 lg:mr-8 none text-base font-medium'>
@@ -79,7 +78,7 @@ const close = () => {
                         <Link className='Nav-Links-Hambuger' to='/staff'>
 							Staff
 						</Link>
-						<Link className='Nav-Links-Hambuger' to='/sermon'>
+						<Link className='Nav-Links-Hambuger' to='/sermons'>
 							Sermon
 						</Link>
                         <Link className='Nav-Links-Hambuger' to='/biblestudy'>

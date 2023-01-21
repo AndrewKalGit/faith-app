@@ -17,7 +17,7 @@ function Staff(props) {
         <img
           alt="Staff"
           src={StaffImg}
-          class="absolute inset-0 h-full w-full object-contain rounded-md"
+          class="absolute inset-0 h-full w-full object-contain"
         />
       </div>
 
