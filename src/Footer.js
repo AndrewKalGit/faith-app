@@ -133,7 +133,7 @@ return (
     </div>
   </div>
 </footer>
-    <div class="sm:flex sm:items-center sm:justify-center">
+    <div class="sm:flex text-center sm:justify-center">
 
         <p class="mb-8 text-sm text-gray-900 sm:mt-0">
           &copy; 2023. Echo Web LLC. All rights reserved.
