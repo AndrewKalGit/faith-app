@@ -1,6 +1,5 @@
 import React from 'react';
 import cross from './img/cross.jpg';
-import bible from './img/bible.jpg';
 import { Helmet } from 'react-helmet';
 
 function About(props) {

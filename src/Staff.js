@@ -1,9 +1,14 @@
 import React from 'react';
 import StaffImg from './img/staff.jpeg';
+import { Helmet } from 'react-helmet';
 
 function Staff(props) {
     return (
         <section>
+            <Helmet>
+                <title> Staff </title>
+                 <meta charSet='utf-8'/>
+            </Helmet>
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
       <div

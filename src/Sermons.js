@@ -1,8 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./youtube.css";
+import { Helmet } from "react-helmet";
 
 const Sermons = ({ embedId }) => (
+<>
+<Helmet>
+    <meta charSet='utf-8'/>
+    <title> Sermons </title>
+</Helmet>
   <div className="video-responsive">
     <iframe
       width="853"
@@ -14,6 +20,7 @@ const Sermons = ({ embedId }) => (
       title="Embedded youtube"
     />
   </div>
+</>
 );
 
 Sermons.propTypes = {
