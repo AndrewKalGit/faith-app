@@ -23,7 +23,7 @@ const close = () => {
       </Link>
 
       <nav class="hidden space-x-8 text-sm font-medium lg:flex">
-        <ul class='text-black lg:flex lg:gap-12 lg:mr-8 none text-xl font-medium'>
+        <ul class='text-black lg:flex lg:gap-12 lg:mr-8 none text-base font-medium'>
                 <li class='hover:opacity-50'>
                     <Link to='/'> Home </Link>
                 </li>
@@ -43,7 +43,7 @@ const close = () => {
                     <Link to='events'> Events </Link>
                 </li>
                 <li class='hover:opacity-50'>
-                    <Link to='koreanministiry'> Korean Ministry </Link>
+                    <a href='http://njfaithchurch.org/korean-ministry/'> Korean Ministry </a>
                 </li>
             </ul>
       </nav>
@@ -88,9 +88,9 @@ const close = () => {
 						<Link className='Nav-Links-Hambuger' to='/events'>
 							Events
 						</Link>
-                        <Link className='Nav-Links-Hambuger' to='/koreanministry'>
+                        <a className='Nav-Links-Hambuger' href='http://njfaithchurch.org/korean-ministry/'>
 							Korean Ministry 
-						</Link>
+						</a>
 					</div>
         </div>
 </div>

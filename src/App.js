@@ -5,6 +5,8 @@ import Banner from './Banner';
 import Nav from './Nav';
 import About from './About';
 import Footer from './Footer';
+import Staff from './Staff';
+import Sermons from './Sermons';
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
         <Routes>
           <Route path='/' element={<><Banner></Banner></>}></Route>
           <Route path='/about' element={<><About></About></>}></Route>
-          <Route path='/staff' element={<></>}></Route>
+          <Route path='/staff' element={<><Staff></Staff></>}></Route>
+          <Route path='/sermons' element={<><Sermons embedId='https://www.youtube.com/watch?v=H-pr6ipK43E'/></>}></Route>
         </Routes> 
         <Footer></Footer>
       </Router>
