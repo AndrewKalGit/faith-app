@@ -1,0 +1,115 @@
+.Hamburger-Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.Hamburger-icon1,
+.Hamburger-icon2,
+.Hamburger-icon3 {
+    background-color: black;
+    height: 5px;
+    width: 36px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.Hamburger-icon1animate {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin-right: 5px;
+    border-radius: 4px;
+    transform: rotate(-45deg) translate(-1px, -1px);
+    transition: .4s;
+}
+
+.Hamburger-icon2animate {
+    opacity: 0;
+    transition: .4s;
+}
+
+.Hamburger-icon3animate {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin-right: 5px;
+    border-radius: 4px;
+    transform: rotate(45deg) translate(-2px, -2px);
+    transition: .4s;
+}
+
+.Hamburger-Menuclicked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hamburger-Menuunclicked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav-HamburgerContent {
+    display: none;
+}
+
+.Nav-HamburgerContentshow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Nav-Links-Hambuger {
+    color: black;
+    font-weight: 700;
+    margin: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .Hamburger-Menuunclicked {
+        display: none;
+    }
+
+    .Nav-HamburgerContentshow {
+        display: none;
+    }
+
+    .Hamburger-Menu {
+        display: none;
+    }
+
+    .Hamburger-icon1,
+    .Hamburger-icon2,
+    .Hamburger-icon3 {
+        display: none;
+    }
+
+    .Hamburger-icon1animate {
+        display: none;
+    }
+
+    .Hamburger-icon2animate {
+        display: none;
+    }
+
+    .Hamburger-icon3animate {
+        display: none;
+    }
+
+    .Hamburger-Menuclicked {
+        display: none;
+    }
+
+    .Hamburger-Button {
+        display: none;
+    }
+}
