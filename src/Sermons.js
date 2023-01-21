@@ -6,19 +6,21 @@ import { Helmet } from "react-helmet";
 const Sermons = ({ embedId }) => (
 <>
 <Helmet>
+    <title>Sermons</title>
     <meta charSet='utf-8'/>
-    <title> Sermons </title>
 </Helmet>
-  <div className="video-responsive">
-    <iframe
-      width="853"
-      height="480"
-      src={`https://www.youtube.com/embed/${embedId}`}
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      title="Embedded youtube"
-    />
+  <div>
+   <object 
+    className="video-responsive"
+    width="1500"
+    height="650"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    title="Embedded youtube">
+    <param name="movie" value={`http://www.youtube.com/v/${embedId}`}></param>
+    <embed src={`http://www.youtube.com/v/${embedId}`} type="application/x-shockwave-flash"></embed>
+</object>
   </div>
 </>
 );
